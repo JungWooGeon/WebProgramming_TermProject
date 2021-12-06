@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./game.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./intro.html" class="navi">소개</a></li>
+        <li><a href="./person.html" class="navi">등장인물</a></li>
+        <li><a href="./introgame.html" class="navi">게임</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <div id="title">게임</div>
+    </nav>
+      <div id="game">
+          <div class="typing-txt">
+            <ul>
+              <li>두 번째 게임입니다.</li>
+              <li>다음 중 하나의 모양을 선택해주세요.</li>
+            </ul>
+          </div>
+          <div class="typing">
+             <ul>
+               <li></li>
+               <li></li>
+            </ul>
+          </div>
+      </div>
+      <div class="select">
+        <img src="./pictures/circle.png">
+        <img src="./pictures/triangle.png">
+        <img src="./pictures/star.png">
+        <canvas id="myCanvas" style="background-color:aliceblue" width="400" height="400">
+      </div>
+      <div id="button"><button type="button" id="submit">제출</button></div>
+    <script src="./script.js"></script>
+    <script src="./secondgame.js"></script>
+  </body>
+</html>
