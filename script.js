@@ -1,8 +1,12 @@
+/*
+  navigation과 관련된 부분은 https://www.youtube.com/watch?v=gXkqy0b4M5g&t=748s
+  영상을 참고해서 기본적인 틀을 다졌고, 필요한 부분들(컴포넌트 위치, 색, 크기, 속도 등)을 변경하고 추가하였음
+*/
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
-
 
   burger.addEventListener("click", ()=> {
     // Toggle Nav
@@ -25,14 +29,6 @@ const navSlide = () => {
 navSlide();
 
 $(function () {
-    /*
-    $("body div").fadeIn(500, function () {
-        $(this).animate({
-            "top": "150px"
-        },1000);
-    });
-    */
-
     $(".navi").click(function () {
         var url = $(this).attr("href");
         $("body div").animate({

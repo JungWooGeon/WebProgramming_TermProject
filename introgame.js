@@ -15,7 +15,7 @@ typingTxt = typingTxt.split(""); // 한글자씩 자른다.
 if(typingBool == false) { // 타이핑이 진행되지 않았다면
     typingBool = true;
     setTimeout(function() {
-      var tyInt = setInterval(typing,100); // 반복동작
+      var tyInt = setInterval(typing, 100); // 반복동작
     }, 3000);
     setTimeout(function() {
       // 타이핑 시작 5초 후에 fadein 을 사용하면서 예 아니오 버튼이 나타남

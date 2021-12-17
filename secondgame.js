@@ -30,6 +30,11 @@ $(document).ready(function() {
     var tmp = $("img")[0].src.split("/");
     tmp = tmp[tmp.length-1].split(".")[0];
     image_name = tmp;
+
+    /*
+     teachable machine 코드에서 init함수를 실행하고 난뒤에 predict함수로
+     예측을 진행해야하기 때문에 .then()으로 구현함
+    */
     init().then(() => {
       predict();
     });
@@ -37,7 +42,6 @@ $(document).ready(function() {
 });
 
 var image_name = "";
-
 var typingBool = false;
 var typingIdx=0;
 var liIndex = 0;
@@ -127,7 +131,7 @@ function out(e) { drawing = false; }
 init_canvas();
 
 
-// teachable machine
+// teachable machine 코드
 // More API functions here:
 // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
@@ -163,7 +167,5 @@ async function predict() {
         }
         location.href = "./intro.html";
       }
-        const classPrediction =
-            prediction[i].className + ": " + prediction[i].probability.toFixed(2);
     }
 }

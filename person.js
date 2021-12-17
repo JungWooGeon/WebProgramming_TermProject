@@ -1,7 +1,7 @@
 
 /*
   https://codepen.io/kkt9102/pen/XWXbqKV을 참고하여 등장인물의 버튼 클릭
-  슬라이드를 참고함(크기와 위치, 배경 색 등만 변경)
+  슬라이드를 구현함(크기와 위치, 배경 색 등만 변경)
 */
 (function () {
       const slideList = document.querySelector('.slide_list');  // Slide parent dom

@@ -37,12 +37,12 @@ p {
   font-weight: bold;
 }
 
-#box-shadow p {
+.box-shadow p {
   text-align: justify;
   font-size: 50px;
 }
 
-#box-shadow img {
+.box-shadow img {
   width: 320px;
   text-align: center;
   margin-top: 3%;
@@ -59,6 +59,7 @@ p {
 iframe {
   width: 1000px;
   height: 500px;
+  border: 0;
 }
 
 /* navigation bar*/
